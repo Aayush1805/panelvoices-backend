@@ -1,7 +1,7 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from routers import voice
-from mangum import Mangum
+# from mangum import Mangum
 
 
 
@@ -27,4 +27,4 @@ def root():
     return {"message": "Welcome to the Voice API"}
 
 
-handler = Mangum(app)
+# handler = Mangum(app)
