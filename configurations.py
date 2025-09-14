@@ -9,8 +9,6 @@ load_dotenv()
 MONGO_URI = os.getenv('MONGO_URI')
 
 
-
-# Create a new client and connect to the server
 client = MongoClient(
     MONGO_URI,
     tls=True,
